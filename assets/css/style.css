@@ -12,12 +12,12 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-body header {
-  vertical-align: bottom;
-}
-
 body header .logo {
   font-family: 'Playfair Display', serif;
+}
+
+body header nav {
+  text-align: right;
 }
 
 body header nav a {
@@ -25,5 +25,26 @@ body header nav a {
   margin-top: 2px;
   text-decoration: none;
   color: #222222;
+}
+
+body main {
+  margin-top: 50px;
+  color: #222222;
+}
+
+body main .greetings {
+  text-align: center;
+}
+
+body main .greetings #greeting-title {
+  font-size: 64px;
+}
+
+body main .greetings #greeting-title span {
+  color: darkcyan;
+}
+
+body main .greetings #greeting-sub-title {
+  font-size: 32px;
 }
 /*# sourceMappingURL=style.css.map */
