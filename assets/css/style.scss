@@ -1,123 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    
-    font-family: 'Montserrat', sans-serif;
-    header{
-        padding: 40px 60px;
+body {
+  font-family: "Montserrat", sans-serif;
+  header {
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      font-family: "Playfair Display", serif;
+    }
+    nav {
+      text-align: right;
+      a {
+        margin: 0 10px;
+        margin-top: 2px;
+        text-decoration: none;
+        color: #1f1f1f;
+      }
+    }
+  }
+  main {
+    margin-top: 50px;
+    color: #1f1f1f;
+    .sub-title {
+      font-size: 32px;
+    }
+    .greetings {
+      text-align: center;
+      #greeting-title {
+        font-size: 64px;
+        span {
+          color: darkcyan;
+        }
+      }
+    }
+    .about {
+      padding: 20px 60px;
+      background-color: #1f1f1f;
+      color: #ffffff;
+      .sub-title {
+        width: 8%;
+        font-size: 48px;
+        padding-bottom: 10px;
+      border-bottom: 2px solid cyan;
+        
+      }
+      .about-content {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        flex-wrap: wrap;
+        .myself {
+          margin-top: -40px;
+        }
+        p {
+          width: 40%;
+          font-size: 22px;
+          letter-spacing: 1px;
+          line-height: 1.5em;
+          button {
+            color: cyan;
+            border-color: cyan;
+            &:hover {
+              color: white;
+              background-color: cyan;
+            }
+          }
+        }
+      }
+    }
+    .experience {
+      padding: 20px 60px;
+      background-color: #1f1f1f;
+      color: #ffffff;
+      padding-bottom: 60px;
+      .sub-title {
+        width: 8%;
+        font-size: 48px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid cyan;
+      }
+      .experience-cards {
+        margin-top: 30px;
         display: flex;
         justify-content: space-between;
-        .logo{
-            font-family: 'Playfair Display', serif;
-        }
-        nav{
-            text-align: right;
-            a{
-                margin: 0 10px;
-                margin-top: 2px;
-                text-decoration: none;
-                color: #1f1f1f;
+        flex-wrap: wrap;
+        .glass {
+          width: 30%;
+          border-radius: 5px;
+          padding: 30px;
+          background-color: rgba($color: #ffffff, $alpha: 0.1);
+          backdrop-filter: blur(60px);
+          border: 1px solid cyan;
+          h5 {
+            span {
+              color: cyan;
             }
+          }
+          p {
+            letter-spacing: 1px;
+            line-height: 1.5em;
+          }
         }
+      }
     }
-    main{
-        margin-top: 50px;
-        color: #1f1f1f;
-        .sub-title{
-            font-size: 32px;
-        }
-        .greetings{
-            text-align: center;
-            #greeting-title{
-                font-size: 64px;
-                span{
-                    color:darkcyan;
-                }
-            }
-        }
-        .about{
-            padding: 20px 60px;
-            background-color: #1f1f1f;
-            color: #ffffff;
-            .sub-title{
-                width: 8%;
-                font-size: 48px;
-                padding-bottom: 10px;
-                border-bottom:2px solid cyan;
-            }
-            .about-content{
-                display: flex;
-                justify-content: space-evenly;
-                margin-top: 50px;
-                flex-wrap: wrap;
-                .myself{
-                    margin-top: -40px;
-                }
-                p{  
-                    width: 40%;
-                    font-size: 22px;
-                    letter-spacing: 1px;
-                    line-height: 1.5em;
-                    
-                }
-            }
-        }
-        .experience{
-            padding: 20px 60px;
-            background-color: #1f1f1f;
-            color: #ffffff;
-            padding-bottom: 60px;
-            .sub-title{
-                width: 8%;
-                font-size: 48px;
-                padding-bottom: 10px;
-                border-bottom:2px solid cyan;
-            }
-            .experience-cards{
-                margin-top: 30px;
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                .glass{
-                    width: 30%;
-                    border-radius: 5px;
-                    padding: 30px;
-                    background-color: rgba($color: #ffffff, $alpha: 0.1);
-                    backdrop-filter: blur(60px);
-                    border: 1px solid cyan;
-                    h5{
-                        span{
-                            color: cyan;
-                        }
-                    }
-                    p{
-                        letter-spacing: 1px;
-                        line-height: 1.5em;  
-                    }
-                }
-            }
-        }
-        .projects{
-            padding: 20px 60px;
-            background-color: #1f1f1f;
-            color: #ffffff;
-            .sub-title{
-                width: 8%;
-                font-size: 48px;
-                padding-bottom: 10px;
-                border-bottom:2px solid cyan;
-            }
-            
-            
-        }
+    .projects {
+      padding: 20px 60px;
+      background-color: #1f1f1f;
+      color: #ffffff;
+      .sub-title {
+        width: 8%;
+        font-size: 48px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid cyan;
+      }
+      .project-list {
+        margin-top: 20px;
+        .project {
+          display: flex;
+          justify-content: space-around;
+          margin-top: 50px;
+          .details {
+            text-align: left;
+            letter-spacing: 1px;
+            line-height: 1.5em;
+            h3{
+                &::before{
+                    content: '1. ';
+                    margin-left: -28px;
 
+                }
+            }
+            a{
+                font-size: x-large;
+                color: #ffffff;
+                text-decoration: none;
+                border-bottom: 2px solid cyan;
+            }
+          }
+          .demo {
+            margin-top: -40px;
+          }
+        }
+      }
     }
+    .contact{
+        background-color: #1f1f1f;
+        color: #ffffff;
+        padding: 20px 60px;
+        .sub-title{
+            word-wrap:normal;
+
+        }
+        .hr{
+            width: 8%;
+            height: 2px;
+            background-color: cyan;
+            margin-top: 10px;
+        }
+    }
+  }
 }

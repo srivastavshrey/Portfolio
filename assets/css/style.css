@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body header {
@@ -22,7 +22,7 @@ body header {
 }
 
 body header .logo {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 body header nav {
@@ -93,6 +93,16 @@ body main .about .about-content p {
   line-height: 1.5em;
 }
 
+body main .about .about-content p button {
+  color: cyan;
+  border-color: cyan;
+}
+
+body main .about .about-content p button:hover {
+  color: white;
+  background-color: cyan;
+}
+
 body main .experience {
   padding: 20px 60px;
   background-color: #1f1f1f;
@@ -149,5 +159,57 @@ body main .projects .sub-title {
   font-size: 48px;
   padding-bottom: 10px;
   border-bottom: 2px solid cyan;
+}
+
+body main .projects .project-list {
+  margin-top: 20px;
+}
+
+body main .projects .project-list .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 50px;
+}
+
+body main .projects .project-list .project .details {
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+
+body main .projects .project-list .project .details h3::before {
+  content: '1. ';
+  margin-left: -28px;
+}
+
+body main .projects .project-list .project .details a {
+  font-size: x-large;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 2px solid cyan;
+}
+
+body main .projects .project-list .project .demo {
+  margin-top: -40px;
+}
+
+body main .contact {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 20px 60px;
+}
+
+body main .contact .sub-title {
+  word-wrap: normal;
+}
+
+body main .contact .hr {
+  width: 8%;
+  height: 2px;
+  background-color: cyan;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */
