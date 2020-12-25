@@ -9,9 +9,12 @@
 }
 
 body{
-    padding: 40px 60px;
+    
     font-family: 'Montserrat', sans-serif;
     header{
+        padding: 40px 60px;
+        display: flex;
+        justify-content: space-between;
         .logo{
             font-family: 'Playfair Display', serif;
         }
@@ -21,13 +24,16 @@ body{
                 margin: 0 10px;
                 margin-top: 2px;
                 text-decoration: none;
-                color: #222222;
+                color: #1f1f1f;
             }
         }
     }
     main{
         margin-top: 50px;
-        color: #222222;
+        color: #1f1f1f;
+        .sub-title{
+            font-size: 32px;
+        }
         .greetings{
             text-align: center;
             #greeting-title{
@@ -36,9 +42,44 @@ body{
                     color:darkcyan;
                 }
             }
-            #greeting-sub-title{
-                font-size: 32px;
+        }
+        .about{
+            padding: 20px 60px;
+            background-color: #1f1f1f;
+            color: #ffffff;
+            .sub-title{
+                width: 8%;
+                font-size: 48px;
+                padding-bottom: 10px;
+                border-bottom:2px solid cyan;
             }
+            .about-content{
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 50px;
+                .myself{
+                    margin-top: -40px;
+                }
+                p{  
+                    width: 40%;
+                    font-size: 22px;
+                    letter-spacing: 1px;
+                    line-height: 1.5em;
+                    
+                }
+            }
+        }
+        .experience{
+            padding: 20px 60px;
+            background-color: #1f1f1f;
+            color: #ffffff;
+            .sub-title{
+                width: 8%;
+                font-size: 48px;
+                padding-bottom: 10px;
+                border-bottom:2px solid cyan;
+            }
+            
         }
 
     }
