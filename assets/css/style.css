@@ -78,6 +78,8 @@ body main .about .about-content {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin-top: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body main .about .about-content .myself {
@@ -95,9 +97,54 @@ body main .experience {
   padding: 20px 60px;
   background-color: #1f1f1f;
   color: #ffffff;
+  padding-bottom: 60px;
 }
 
 body main .experience .sub-title {
+  width: 8%;
+  font-size: 48px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid cyan;
+}
+
+body main .experience .experience-cards {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main .experience .experience-cards .glass {
+  width: 30%;
+  border-radius: 5px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(60px);
+          backdrop-filter: blur(60px);
+  border: 1px solid cyan;
+}
+
+body main .experience .experience-cards .glass h5 span {
+  color: cyan;
+}
+
+body main .experience .experience-cards .glass p {
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+
+body main .projects {
+  padding: 20px 60px;
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+body main .projects .sub-title {
   width: 8%;
   font-size: 48px;
   padding-bottom: 10px;
