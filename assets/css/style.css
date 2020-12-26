@@ -9,6 +9,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 body header {
@@ -34,6 +35,12 @@ body header nav a {
   margin-top: 2px;
   text-decoration: none;
   color: #1f1f1f;
+}
+
+body header nav .fa-bars {
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 body main {
@@ -180,11 +187,6 @@ body main .projects .project-list .project .details {
   line-height: 1.5em;
 }
 
-body main .projects .project-list .project .details h3::before {
-  content: '1. ';
-  margin-left: -28px;
-}
-
 body main .projects .project-list .project .details a {
   font-size: x-large;
   color: #ffffff;
@@ -194,6 +196,11 @@ body main .projects .project-list .project .details a {
 
 body main .projects .project-list .project .demo {
   margin-top: -40px;
+}
+
+body main .projects .project-list .project .demo video {
+  width: 500px;
+  height: 350px;
 }
 
 body main .contact {
@@ -211,5 +218,11 @@ body main .contact .hr {
   height: 2px;
   background-color: cyan;
   margin-top: 10px;
+}
+
+body aside {
+  width: 0;
+  height: 0vh;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

@@ -12,26 +12,36 @@
       crossorigin="anonymous"
     />
 
+    <!-- fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/f4d5a353e4.js" crossorigin="anonymous"></script>
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Mobile Version CSS -->
+    <link rel="stylesheet" href="./assets/css/style-1.css">
 
     <title>Portfolio</title>
   </head>
   <body>
     <!-- header -->
     <header>
-      <div class="logo">Shrey</div>
+      <div class="logo w-50" onclick="closeSidebar()">Shrey</div>
       <nav>
         <a href="#">Home</a>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
+        <div class="dropdown">
+          <i class="fas fa-bars" type="button" id="dropdownMenuButton">
+          </i>
+        </div>
       </nav>
     </header>
 
     <!-- main -->
-    <main>
+    <main id="main-area" onclick="closeSidebar()">
       <section class="greetings">
         <div id="greeting-title">Hi Myself <span>Shrey</span></div>
         <div class="sub-title">A web Developer, Designer, UI Developer</div>
@@ -93,7 +103,7 @@
               <a href="https://github.com/srivastavshrey/To-Do-List" target="_blank">Github link -></a>
             </div>
             <div class="demo">
-              <video controls width="500px" height="350px">
+              <video controls >
                 <source src="./assets/img-videos/To-Do List - Google Chrome 2020-12-25 12-52-17.mp4" type="video/mp4">
               </video>
             </div>
@@ -116,7 +126,7 @@
               <a href="https://github.com/srivastavshrey/To-Do-List" target="_blank">Github link -></a>
             </div>
             <div class="demo">
-              <video controls width="500px" height="350px">
+              <video controls>
                 <source src="./assets/img-videos/To-Do List - Google Chrome 2020-12-25 12-52-17.mp4" type="video/mp4">
               </video>
             </div>
@@ -139,7 +149,7 @@
               <a href="https://github.com/srivastavshrey/To-Do-List" target="_blank">Github link -></a>
             </div>
             <div class="demo">
-              <video controls width="500px" height="350px">
+              <video controls>
                 <source src="./assets/img-videos/To-Do List - Google Chrome 2020-12-25 12-52-17.mp4" type="video/mp4">
               </video>
             </div>
@@ -156,6 +166,17 @@
         <h4>Email: <a href="mailto:shreysrivastav21@gmail.com">shreysrivastav21@gmail.com</a></h4>
       </section><!--project-closed-->
     </main>
+
+    <!-- aside -->
+    <aside id="sidebar">
+      <ul>
+        <li><a href="#" onclick="closeSidebar()">Home</a></li>
+        <li><a href="#about" onclick="closeSidebar()">About</a></li>
+        <li><a href="#experience" onclick="closeSidebar()">Experience</a></li>
+        <li><a href="#projects" onclick="closeSidebar()">Projects</a></li>
+        <li><a href="#contact" onclick="closeSidebar()">Contact</a></li>
+      </ul>
+    </aside>
 
     <!-- Bootstrap JS -->
     <script

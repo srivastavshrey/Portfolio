@@ -1,0 +1,95 @@
+@media all and (max-width: 500px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  header {
+    padding: 20px 20px !important;
+  }
+  header nav a {
+    display: none;
+  }
+  .fa-bars {
+    padding: 0 !important;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    font-size: 1.5em !important;
+    cursor: pointer;
+  }
+  main {
+    margin-top: 0 !important;
+  }
+  main .greetings {
+    padding: 10px 20px;
+    text-align: left !important;
+  }
+  main section p {
+    width: 100% !important;
+  }
+  main .about p {
+    font-size: medium !important;
+  }
+  main .experience {
+    padding: 10px 20px !important;
+  }
+  main .experience .experience-cards {
+    display: block !important;
+  }
+  main .experience .experience-cards .glass {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+  main .projects {
+    padding: 10px 20px !important;
+  }
+  main .projects .project-list .project {
+    display: block !important;
+  }
+  main .projects .project-list .project .demo {
+    margin-top: 10px !important;
+    margin-left: 10px;
+  }
+  main .projects .project-list .project .demo video {
+    width: 300px !important;
+    height: 180px !important;
+  }
+  main .contact {
+    padding: 10px 20px !important;
+  }
+  aside {
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 0;
+    padding: 10px 0px;
+    width: 0px !important;
+    height: 100vh !important;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  aside ul {
+    list-style: none;
+    padding-left: 10px;
+  }
+  aside ul li {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  aside ul li a {
+    width: 100%;
+    padding: 5px;
+    text-decoration: none !important;
+    color: #ffffff;
+  }
+  aside ul li a:visited {
+    color: white;
+    background-color: #1f1f1f;
+  }
+}
+/*# sourceMappingURL=style-1.css.map */
