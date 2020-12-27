@@ -29,6 +29,9 @@
   main section p {
     width: 100% !important;
   }
+  main .about {
+    padding: 10px 20px !important;
+  }
   main .about p {
     font-size: medium !important;
   }
