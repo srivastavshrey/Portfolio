@@ -90,7 +90,8 @@ body main .about .about-content {
 }
 
 body main .about .about-content .myself {
-  margin-top: -40px;
+  margin-top: -80px;
+  margin-left: 20px;
 }
 
 body main .about .about-content p {
@@ -196,6 +197,8 @@ body main .projects .project-list .project .details a {
 
 body main .projects .project-list .project .demo {
   margin-top: -40px;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 body main .projects .project-list .project .demo video {

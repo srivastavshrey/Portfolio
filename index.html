@@ -13,13 +13,16 @@
     />
 
     <!-- fontawesome cdn -->
-    <script src="https://kit.fontawesome.com/f4d5a353e4.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f4d5a353e4.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!-- Mobile Version CSS -->
-    <link rel="stylesheet" href="./assets/css/style-1.css">
+    <link rel="stylesheet" href="./assets/css/style-1.css" />
 
     <title>Portfolio</title>
   </head>
@@ -34,8 +37,7 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
         <div class="dropdown">
-          <i class="fas fa-bars" type="button" id="dropdownMenuButton">
-          </i>
+          <i class="fas fa-bars" type="button" id="dropdownMenuButton"> </i>
         </div>
       </nav>
     </header>
@@ -44,45 +46,70 @@
     <main id="main-area" onclick="closeSidebar()">
       <section class="greetings">
         <div id="greeting-title">Hi Myself <span>Shrey</span></div>
-        <div class="sub-title">A web Developer, Designer, UI Developer</div>
-      </section><!--greetins-closed-->
+        <div class="sub-title">A Web Developer, Designer, UI Developer</div>
+      </section>
+      <!--greetins-closed-->
       <br /><br />
       <section class="about" id="about">
         <div class="sub-title">ABOUT</div>
         <div class="about-content">
-          <div class="myself"><img src="https://images.vexels.com/media/users/3/140748/isolated/preview/5b078a59390bb4666df98b49f1cdedd0-male-profile-avatar-by-vexels.png" alt="" width="300px" height="300px"></div>
+          <div class="myself">
+            <img
+              src="./assets//img-videos/IMG-20210226-WA0059.jpg"
+              alt=""
+              width="280px"
+              height="350px"
+            />
+          </div>
           <p>
-            I love to work as a Full Stack Developer basically on Front End Development in JAVASCRIPT and Back End Development in NodeJS with Express and MongoDB as a database.
-            <br><br>
-            Download My Resume: <br>
-            <button class="btn btn-outline-danger">My Resume</button>
+            I love to work as a Full Stack Developer basically on Front End
+            Development in JAVASCRIPT and Back End Development in NodeJS with
+            Express and MongoDB as a database.
+            <br /><br />
+            Download My Resume: <br />
+            <a href="./assets/myResume.pdf" download="Shrey's Resume"
+              ><button class="btn btn-outline-danger">My Resume</button></a
+            >
           </p>
         </div>
-      </section><!--about-closed-->
-      <br><br>
+      </section>
+      <!--about-closed-->
+      <br /><br />
       <section class="experience" id="experience">
-        <div class="sub-title">EXPERIENCE</div> 
+        <div class="sub-title">EXPERIENCE</div>
         <div class="experience-cards">
           <div class="glass">
             <h5>Company: <span>Crossworld Staffing Solutions</span></h5>
-            <h5>Profile: <span>Back End  Developer</span></h5>
-            <p>Worked as a backend developer (intern), helped in mainting official website, and debuggings using technoligies like Node.js, Express.js, MongoDB, JavaScript etc.</p>
+            <h5>Profile: <span>Back End Developer</span></h5>
+            <p>
+              Worked as a backend developer (intern), helped in mainting
+              official website, and debuggings using technoligies like Node.js,
+              Express.js, MongoDB, JavaScript etc.
+            </p>
           </div>
           <div class="glass">
             <h5>Company: <span>Trilyo</span></h5>
             <h5>Profile: <span>Front End Developer</span></h5>
-            <br>
-            <p>Worked as a frontend developer (intern). Developed given UI and new Wireframes using HTML, CSS, JavaScript, Bootstrap</p>
+            <br />
+            <p>
+              Worked as a frontend developer (intern). Developed given UI and
+              new Wireframes using HTML, CSS, JavaScript, Bootstrap
+            </p>
           </div>
           <div class="glass">
             <h5>Company: <span>PS-1925</span></h5>
             <h5>Profile: <span>Front End Developer</span></h5>
-            <br>
-            <p>Worked as a frontend developer (trainee). Created multiple mini-projects, and helped on the front-end part of official website using HTML,CSS, JavaScript, Bootstrap.</p>
+            <br />
+            <p>
+              Worked as a frontend developer (trainee). Created multiple
+              mini-projects, and helped on the front-end part of official
+              website using HTML,CSS, JavaScript, Bootstrap.
+            </p>
           </div>
         </div>
-      </section><!--experience-closed-->
-      <br><br>
+      </section>
+      <!--experience-closed-->
+      <br /><br />
       <section class="projects" id="projects">
         <div class="sub-title">PROJECTS</div>
         <div class="project-list">
@@ -90,7 +117,8 @@
             <div class="details">
               <h3>ToDo List</h3>
               <p>
-                A project where you can make a list of your tasks by adding or deleting them.
+                A project where you can make a list of your tasks by adding or
+                deleting them.
               </p>
               <ul>
                 <li>HTML</li>
@@ -99,16 +127,23 @@
                 <li>MongoDB</li>
                 <li>NodeJs</li>
               </ul>
-              <br>
-              <a href="https://github.com/srivastavshrey/To-Do-List" target="_blank">Github link -></a>
+              <br />
+              <a
+                href="https://github.com/srivastavshrey/To-Do-List"
+                target="_blank"
+                >Github link -></a
+              >
             </div>
             <div class="demo">
-              <video controls >
-                <source src="./assets/img-videos/To-Do List - Google Chrome 2020-12-25 12-52-17.mp4" type="video/mp4">
+              <video controls>
+                <source
+                  src="./assets/img-videos/To-Do List - Google Chrome 2020-12-25 12-52-17.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </div>
-          <hr>
+          <hr />
           <div class="project">
             <div class="details">
               <h3>Rock Paper Scissor Game</h3>
@@ -121,49 +156,67 @@
                 <li>JAVASCRIPT</li>
                 <li>SASS</li>
               </ul>
-              <br>
-              <a href="https://github.com/srivastavshrey/rock-paper-scissor" target="_blank">Github link -></a>
+              <br />
+              <a
+                href="https://github.com/srivastavshrey/rock-paper-scissor"
+                target="_blank"
+                >Github link -></a
+              >
             </div>
             <div class="demo">
               <video controls>
-                <source src="./assets/img-videos/Rock Paper Scissor - Google Chrome 2020-12-27 14-10-08.mp4" type="video/mp4">
+                <source
+                  src="./assets/img-videos/Rock Paper Scissor - Google Chrome 2020-12-27 14-10-08.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </div>
-          <hr>
+          <hr />
           <div class="project">
             <div class="details">
-              <h3>ToDo List</h3>
-              <p>
-                A project where you can make a list of your tasks by adding or deleting them.
-              </p>
+              <h3>Music Player</h3>
+              <p>A project where you can play songs and listen to music.</p>
               <ul>
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>JAVASCRIPT</li>
-                <li>MongoDB</li>
+                <li>React.Js</li>
                 <li>NodeJs</li>
               </ul>
-              <br>
-              <a href="https://github.com/srivastavshrey/To-Do-List" target="_blank">Github link -></a>
+              <br />
+              <a
+                href="https://github.com/srivastavshrey/music-player"
+                target="_blank"
+                >Github link -></a
+              >
             </div>
             <div class="demo">
               <video controls>
-                <source src="./assets/img-videos/To-Do List - Google Chrome 2020-12-25 12-52-17.mp4" type="video/mp4">
+                <source
+                  src="./assets/img-videos/React App - Google Chrome 2021-03-18 12-29-39.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </div>
         </div>
-      </section><!--projects-closed-->
-      <br><br>
+      </section>
+      <!--projects-closed-->
+      <br /><br />
       <section class="contact" id="contact">
         <div class="sub-title">LET'S GET IN TOUCH</div>
         <div class="hr"></div>
-        <br><br>
+        <br /><br />
         <h4>Mobile: <a href="tel:+917011740532">+91-7011740533</a></h4>
-        <br>
-        <h4>Email: <a href="mailto:shreysrivastav21@gmail.com">shreysrivastav21@gmail.com</a></h4>
-      </section><!--project-closed-->
+        <br />
+        <h4>
+          Email:
+          <a href="mailto:shreysrivastav21@gmail.com"
+            >shreysrivastav21@gmail.com</a
+          >
+        </h4>
+      </section>
+      <!--project-closed-->
     </main>
 
     <!-- aside -->
